@@ -28,9 +28,6 @@ layout: default
 
 
 <style>
-.jumbotron{
-    background-color: rgba(0,0,0,0)!important;
-}
 input:focus, textarea:focus {
     outline: none;
 }
