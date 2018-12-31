@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Program for traversing and displaying a matrix
+title: "Program for traversing and displaying a matrix"
 author: Priyansh Srivastava
 date: 2018-12-31 23:11:00 Z
 categories:
@@ -47,4 +47,4 @@ getch();
 
 **OUTPUT**
 
-![{{post.title}}]({{site.baseurl}}/assets/post_images/{{post.title}}.jpg)
+![{{post.title}}]({{site.baseurl}}/assets/post_images/ds1.jpg)
