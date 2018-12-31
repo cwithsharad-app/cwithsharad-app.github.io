@@ -10,7 +10,7 @@ layout: default
 </form>
 
 <hr/>
-<ol style="text-align: left!important; background-color: rgba(0,0,0,0.8);" id="results-container">
+<ol style="text-align: left!important; background-color: rgba(0,0,0,0);" id="results-container">
 </ol>
 
 <!-- script pointing to search.js -->
@@ -28,6 +28,9 @@ layout: default
 
 
 <style>
+.jumbotron{
+    background-color: rgba(0,0,0,0);
+}
 input:focus, textarea:focus {
     outline: none;
 }
