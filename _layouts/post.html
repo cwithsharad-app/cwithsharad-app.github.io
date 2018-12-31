@@ -1,0 +1,50 @@
+<html>
+{% include head.html %}
+<body cz-shortcut-listen="true" id="bg-image">
+    <div class="container">
+        <!-- Jumbotron -->
+        <div class="jumbotron" style="background:rgb(0,0,0,0.5)!important">
+            <h2 style="color:white!important">{{ page.title }}</h2>
+            <h4 style="color:yellow!important">Written by {{ page.author }} on
+			{% if page.date %}
+				{% assign day = page.date | date: "%-d"  %}
+				{% case day %}
+				  {% when '1' or '21' or '31' %}{{ day }}st
+				  {% when '2' or '22' %}{{ day }}nd
+				  {% when '3' or '23' %}{{ day }}rd
+				  {% else %}{{ day }}th
+				{% endcase %}
+				{{ page.date | date: "of %B, %Y" }}			
+			{% endif %}</h4>			
+			<div>
+                  {% if post.categories %}
+                    {% assign categories = post.categories %}
+                  {% else %}
+                    {% assign categories = page.categories %}
+                  {% endif %}
+                  {% for category in categories %}
+				  <a href="{{site.url}}/{{ site.baseurl }}/categories/#{{category|slugize}}" >
+				  <span class="badge">{{category}}</span>
+				  </a>
+                  {% unless forloop.last %}&nbsp;{% endunless %}
+                  {% endfor %}
+              <div>
+			<hr/>
+            <p>{{ content }}</p>
+			<div>
+			{% include disqus.html %}
+			</div>
+        </div>
+    </div>
+{% include scripts.html %}
+</body>
+				  <style>
+				  .badge:hover{
+				  color:black!important;
+				  background: #00ff00;
+				  }
+				  img{
+				  max-width:100%;
+				  }
+				  </style>
+</html>

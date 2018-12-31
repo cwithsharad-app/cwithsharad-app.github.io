@@ -1,0 +1,28 @@
+<html>
+{% include head.html %}
+<body cz-shortcut-listen="true" id="bg-image" onLoad="typeWriter()">
+    <div class="container">
+        <!-- Jumbotron -->
+        <div class="jumbotron" style="background:rgb(0,0,0,0.5)!important">
+            <h1>{{ page.title }}</h1>
+            <p id="app"></p>
+        </div>
+    </div>
+{% include scripts.html %}
+
+<script>
+var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+    loop: false,
+    delay: 30,
+    cursor: "_"
+});
+
+typewriter.typeString('{{ page.description }}')
+    .pauseFor(2500)
+    .start();
+</script>
+
+</body>
+</html>

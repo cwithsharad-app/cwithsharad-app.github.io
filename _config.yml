@@ -1,0 +1,108 @@
+---
+title: CODE WITH SHARAD
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+google_a_id: "UA-126815861-1"
+defaults:
+- scope:
+    path: _posts
+  values:
+    layout: post
+    author: Sharad Raj
+tagline: A site dedicated to C.S.
+description: A site dedicated to C.S. and Technnology. Launched in 2017 for helping
+  the students of B.C.A. in finding all the programs related to their course on a
+  single site. The thought of launching this website came when I felt the need of
+  a source which can help me in finding the programs related to my course and I saw
+  that most of the sites or the blogs available are not that oriented towards B.C.A.,
+  and  there are hardly few blogs or websites which are providing content for the
+  B.C.A.
+baseurl: ''
+url: https://cwithsharad.github.io/cws_app
+logo: logo.png
+plugins:
+- jekyll-paginate
+- jemoji
+- jekyll-archives
+- jekyll-sitemap
+- jekyll-feed
+
+markdown: kramdown
+paginate: 10
+paginate_path: "/page:num"
+author:
+  name: Sharad Raj
+  description: A passionate <strong>developer and student</strong>, learning to be
+    a giant.
+  contact:
+  - title: linkedin
+    url: https://www.linkedin.com/in/srsmaurya
+  - title: github
+    url: https://github.com/sharadcodes
+  - title: facebook
+    url: https://fb.me/therealsharad
+  - title: twitter
+    url: https://twitter.com/iamsharadraj
+  - title: email
+    url: mailto:cwithsharad@gmail.com
+google_analytics_token: ''
+disqus_short_name: cwithsharad
+toc:
+- title: Blog
+  url: "/"
+- title: Categories
+  url: "/categories/"
+- title: Search
+  url: "/search"
+- title: Resources
+  subfolderitems:
+  - page: Quizzes
+    url: "/quizzes"
+  - page: PDFs
+    url: "/pdfs"
+- title: Projects
+  subfolderitems:
+  - page: Bank Management System
+    url: https://sharadcodes.github.io/BMS
+  - page: TIC-TAC-2 GAME
+    url: https://sharadcodes.github.io/tictac2/
+  - page: FUN-WITH-C
+    url: https://sharadcodes.github.io/funwithc/
+  - page: Run-CPP
+    url: https://sharadcodes.github.io/runcpp/
+- title: Author
+  url: "/author"
+skills:
+- title: C
+  level: 91
+  color: info
+- title: C++
+  level: 81
+  color: info
+- title: Python
+  level: 69
+  color: info
+- title: Linux
+  level: 54
+  color: info
+- title: Html
+  level: 72
+  color: info
+- title: CSS
+  level: 69
+  color: info
+- title: Jekyll
+  level: 92
+  color: info
+- title: Liquid
+  level: 27
+  color: info
+- title: Kotlin
+  level: 37
+  color: info

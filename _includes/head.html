@@ -1,0 +1,126 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/img/apple-touch-icon-precomposed.png">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicon.ico">
+    <title>{{ site.title }} | {{ page.title }}</title>
+    <link href="{{site.baseurl}}/assets/css/hacker.css" rel="stylesheet">
+    <link href="{{site.baseurl}}/assets/css/syntax_h.css" rel="stylesheet">
+    <meta name="google-site-verification" content="PChdxQmshl8Qxvh0W6r6rxbfLbWz98bNRRRINa99d_Y" />
+    <meta name="google-site-verification" content="HsK9JHF5nrUfxJzHriO0PabykC9hABjUX_LiyJNzpaQ" />	
+    <!-- Chrome, Firefox OS and Opera --> 
+    <meta name="theme-color" content="#00ff00">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#00ff00">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#00ff00">		
+    {% include google_a.html %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4981908520905096",
+    enable_page_level_ads: true
+  });
+</script>
+
+    <style>
+	#bg-image{ 
+    background-image: url("{{site.baseurl}}/assets/img/pc_back.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+	}
+	
+    .tall-row {
+        margin-top: 40px;
+    }
+    .modal {
+        position: relative;
+        top: auto;
+        right: auto;
+        left: auto;
+        bottom: auto;
+        z-index: 1;
+        display: block;
+    }
+    </style>
+<style type="text/css">.backpack.dropzone {
+  font-family: 'SF UI Display', 'Segoe UI';
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 150px;
+  font-weight: lighter;
+  color: white;
+  will-change: right;
+  z-index: 2147483647;
+  bottom: 20%;
+  background: #333;
+  position: fixed;
+  user-select: none;
+  transition: left .5s, right .5s;
+  right: 0px; }
+  .backpack.dropzone .animation {
+    height: 80px;
+    width: 250px;
+    background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/hoverstate.png") left center; }
+  .backpack.dropzone .title::before {
+    content: 'Save to'; }
+  .backpack.dropzone.closed {
+    right: -250px; }
+  .backpack.dropzone.hover .animation {
+    animation: sxt-play-anim-hover 0.91s steps(21);
+    animation-fill-mode: forwards;
+    background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/hoverstate.png") left center; }
+
+@keyframes sxt-play-anim-hover {
+  from {
+    background-position: 0px; }
+  to {
+    background-position: -5250px; } }
+  .backpack.dropzone.saving .title::before {
+    content: 'Saving to'; }
+  .backpack.dropzone.saving .animation {
+    background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/saving_loop.png") left center;
+    animation: sxt-play-anim-saving steps(59) 2.46s infinite; }
+
+@keyframes sxt-play-anim-saving {
+  100% {
+    background-position: -14750px; } }
+  .backpack.dropzone.saved .title::before {
+    content: 'Saved to'; }
+  .backpack.dropzone.saved .animation {
+    background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/saved.png") left center;
+    animation: sxt-play-anim-saved steps(20) 0.83s forwards; }
+
+@keyframes sxt-play-anim-saved {
+  100% {
+    background-position: -5000px; } }
+</style>
+
+
+<!-- BG IMAGE CGNH 
+<script>
+$(document).ready(function() {
+  var urls = ['{{site.baseurl}}/assets/img/back.jpg', '{{site.baseurl}}/assets/img/man_back.jpg', '{{site.baseurl}}/assets/img/pc_back.jpg', '{{site.baseurl}}/assets/img/hack_back.jpg'];
+
+  var cout = 1;
+  $('body').css('background-image', 'url("' + urls[0] + '")');
+  setInterval(function() {
+    $('body').css('background-image', 'url("' + urls[cout] + '")');
+    cout == urls.length-1 ? cout = 0 : cout++;
+  }, 5000);
+
+});
+</script>		
+-->
+</head>
