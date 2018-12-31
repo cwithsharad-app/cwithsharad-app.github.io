@@ -24,7 +24,7 @@ description: A site dedicated to C.S. and Technnology. Launched in 2017 for help
   and  there are hardly few blogs or websites which are providing content for the
   B.C.A.
 baseurl: ''
-url: https://cwithsharad.github.io/cws_app
+url: https://cwithsharad-app.github.io
 logo: logo.png
 plugins:
 - jekyll-paginate
