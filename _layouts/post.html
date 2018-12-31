@@ -31,7 +31,7 @@
                   {% endfor %}
               <div>
 			<hr/>
-            <p style="font-size:16px!important;">{{ content }}</p>
+            <p style="font-size:16px!important;">{{ content | remove: "<p>" | remove: "</p>" }}</p>
 			<div>
 			{% include disqus.html %}
 			</div>
