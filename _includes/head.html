@@ -6,6 +6,10 @@
 <link rel="manifest" href="{{site.baseurl}}/manifest.json" />
 <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
+function gonative_onesignal_info(info) {
+    console.log(info);
+}
+
   var OneSignal = window.OneSignal || [];
   OneSignal.push(function() {
     OneSignal.init({
