@@ -5,11 +5,6 @@
     <div class="container">
         <!-- Jumbotron -->
         <div class="jumbotron" style="background:rgb(0,0,0,0.5)!important">
-<style>
-.jumbotron>p{
-font-size:16px!important;
-}
-</style>
             <h3 style="color:white!important">{{ page.title }}</h3>
             <h4 style="color:yellow!important">Written by {{ page.author }} on
 			{% if page.date %}
@@ -36,7 +31,7 @@ font-size:16px!important;
                   {% endfor %}
               <div>
 			<hr/>
-            <p>{{ content }}</p>
+            <p style="font-size:16px!important;">{{ content }}</p>
 			<div>
 			{% include disqus.html %}
 			</div>
